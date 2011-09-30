@@ -1,0 +1,6 @@
+<popupBox style="align:fill;layout:inlinelayout(false,fill)">
+	%RUN_APP%
+	<textfield id="app" />
+	<popupBoxFirstMenuItem onAction="Run(#app.text)">%VALIDATE%</popupBoxFirstMenuItem>
+	<popupBoxSecondMenuItem>%CANCEL%</popupBoxSecondMenuItem>
+</popupBox>

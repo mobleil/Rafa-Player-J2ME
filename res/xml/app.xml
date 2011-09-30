@@ -1,0 +1,36 @@
+<screen style="transition:slide(left)">
+	<_title>@{title}</_title>
+	<scrollPane>
+		<list id="list">
+			<_renderer>
+			<![CDATA[
+			<listItem style="layout:borderlayout" onAction="Show">
+				<_class>@{class_name}</_class>
+				<container style="layout:inlinelayout(false,fill);layout-data:bld(center)">
+					<text>@{name}</text>
+					<textarea class="small">
+						@{description}
+						<_visible>@{enableDesc}</_visible>
+					</textarea>
+				</container>
+				<picture src="expand.png" style="layout-data:bld(east)" class="listexpand">
+					<_visible>@{enableExpand}</_visible>
+				</picture>
+			</listItem>
+			]]>
+			</_renderer>
+			<_items>@{listitem}</_items>
+		</list>
+	</scrollPane>
+	<screenFirstMenu>
+		<picture>start.png</picture>
+		%START%
+		<menupopup>
+			<menuitem onAction="Catalog">%CATALOG%</menuitem>
+			<menuitem onAction="askRun">%RUN%</menuitem>
+			<container class="separator" />
+			<menuitem onAction="askQuit">%SHUTDOWN%</menuitem>
+		</menupopup>
+	</screenFirstMenu>
+	<screenSecondMenu onAction="Back">%BACK%</screenSecondMenu>
+</screen>

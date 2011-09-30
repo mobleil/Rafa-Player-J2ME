@@ -1,0 +1,8 @@
+<container style="layout:borderlayout">
+	<picture style="layout-data:bld(center)" src="splash.png" />
+	<container style="layout-data:bld(south);layout:inlinelayout(false,fill);align:center">
+		<picture src="loading.png" frameWidth="16" frameHeight="16" />
+		<text>Poltek Telkom</text>
+		<text style="font-style:italic;font-size:small">Mobile Politeknik Telkom</text>
+	</container>
+</container>

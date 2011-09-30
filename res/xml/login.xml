@@ -1,0 +1,21 @@
+<screen>
+	<_title>%TITLE%</_title>
+	<scrollPane>
+		<container style="layout:borderlayout" id="list">
+			<container id="listitem" style="layout-data:bld(north)" class="atas">
+				<text>Username:</text>
+				<textfield id="userid" maxsize="20">@{userid}</textfield>
+			</container>
+			<container id="listitem" style="layout-data:bld(center)" class="tengah">
+				<text>Password:</text>
+				<textfield id="passwd" maxsize="50" constraints="password">@{passwd}</textfield>
+			</container>
+			<container id="listitem" style="layout-data:bld(south)" class="bawah">
+				<text>City:</text>
+				<textfield id="city" maxsize="50" />
+			</container>
+		</container>
+	</scrollPane>
+	<screenFirstMenu onAction="Back">%BACK%</screenFirstMenu>
+	<screenSecondMenu onAction="Submit(#userid.text, #passwd.text, #city.text)">%SUBMIT%</screenSecondMenu>
+</screen>

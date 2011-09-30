@@ -1,0 +1,4 @@
+<container style="layout:borderlayout">
+	<picture style="layout-data:bld(center)" src="loading.png" frameWidth="16" frameHeight="16" />
+	<text style="layout-data:bld(south)">Loading</text>
+</container>

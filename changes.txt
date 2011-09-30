@@ -1,0 +1,24 @@
+Version 1.1
+- Up and running RAFA Player for J2ME Device
+- Can run RAFA language and visualize RAFA UI Elements
+- Added authentication UI before running RAFA Application
+
+Version 1.2
+- Redesign UI interface RAFA Player more clean and nice
+- Sepperated authentication UI from list interface, because the difficulties.
+- Added more error handling, and network report.
+- Support local database for saving username and password, so user not retyped again
+- Support RAFA cache, minimize network bandwidth
+- Support description on List UI
+
+Version 1.3
+- Add Form primitive, support (TextField, Choice, Check)
+- Add index on user (rafa core)
+- Change curl library on code igniter framework, more solid and error free
+- Modify rafa library constructor to PHP5 style
+- Fixed cineplex example, now can show movie list
+- Add function to open ci class inside ci class on curl library
+- Add dom_parse helpers for easy html parsing
+- Modify rafa list with added title dan help
+- Erase label primitive from rafa
+- Support Market, MyApps and Run from start menu

@@ -1,0 +1,7 @@
+<screen>
+	<_title>%TITLE%</_title>
+	<scrollPane>
+	</scrollPane>
+	<screenFirstMenu onAction="askQuit">%QUIT%</screenFirstMenu>
+	<screenSecondMenu onAction="Login">@{bText}</screenSecondMenu>
+</screen>

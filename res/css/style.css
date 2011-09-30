@@ -1,0 +1,267 @@
+screen {
+	font-size: small;
+	bg-image: url(back.png);
+	bg-repeat: 0 0;
+	bg-align: top-left;
+}
+
+screentopbar {
+	bg-color:#C1CEDD;
+	bg-image:url(tb_bg.png);
+	bg-align:bottom-left;
+	bg-repeat:0 1;
+	padding:2 5 2 2;
+}
+
+screentopbar text {
+	color:white;
+	bg-image:url(icon.png);
+	bg-align:left;
+	bg-repeat:1 1;
+	padding:0 0 0 18;
+}
+
+screenbottombar,popupboxbottombar {
+	bg-color:#C1CEDD;
+	bg-image:url(bb_bg.png);
+	bg-repeat:0 1;
+	bg-align:top-left;
+	padding:2 5 2 5;
+}
+
+screenbottombar text {
+	color:white;
+}
+
+scrollpane scrollpanecontainer {
+	padding: 4 2 4 4;
+}
+
+scrollbar {
+	padding: 0 1 0 0;
+	margin: 0;
+}
+
+scrollbarbar {
+	min-size: 2 2;
+	bg-color: #616264;
+}
+
+list {
+	margin: 0 0 4 0;
+	border-image: url(item_b.png) 6 6 6 6;
+	border: 6;
+	bg-color: white;
+	layout: inlinelayout(false,fill);
+	gap: 0 2;
+}
+
+listitem {
+	layout: borderlayout;
+	padding: 1 2 1 2;
+}
+
+listitem#expand {
+	bg-image: url(expand.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+}
+
+listitem#adv {
+	bg-color: green;
+}
+
+listitem:hover {
+	bg-color: #2472D4;
+	color: white;
+}
+
+listitem:hover#expand {
+	bg-image: url(expand_h.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+}
+
+#listtitle {
+	font-style: bold;
+	color: #616264;
+	margin: 0 0 0 6;
+}
+
+#listhelp {
+	color: #616264;
+	margin: 0 6 4 6;
+	align: center;
+}
+
+#itemtitle {
+	font-style: bold;
+	layout-data: bld(center);
+}
+
+#itemsnipset {
+	layout-data: bld(east);
+	color: #959595;
+}
+
+#itemdesc {
+	layout-data: bld(south);
+	font-face: proportional;
+	font-size: small;
+}
+
+#poprun {
+	layout:inlinelayout(false,fill);
+	align: fill;
+}
+
+#loading {
+	margin: 0 0 4 0;
+	border-image: url(item_b.png) 6 6 6 6;
+	border: 6;
+	bg-color: white;
+	layout: gridlayout(2,1);
+}
+
+#loading text {
+	font-style: bold;
+	align: left;
+}
+
+#loading picture {
+	align: right;
+}
+
+popupbox {
+	padding:10;
+	layout-data:sld(bottom,1,-1);
+	bg-color:#2D2D2D;
+	grayed-color:white;
+	font-size: small;
+}
+
+popupbox text {
+	color: white;
+}
+
+popupbox.splash {
+	margin:0;
+	padding:0 0 10 0;
+	layout-data:sld(center,1,1);
+	bg-color:white;
+}
+
+popupbox.splash text {
+	color:black;
+	align:center;
+	font-size:large;
+}
+
+menupopup {
+	font-size: small;
+	border: 6;
+	border-image: url(item_a.png) 6 6 6 6;
+	padding: 0;
+	margin: 0;
+	bg-color: white;
+	color: black;
+}
+
+.separator {
+	min-size: 0 1;
+	bg-color: #9c9c9c;
+	margin: 1 0 1 0;
+}
+
+menuitem {
+	padding: 1 2 1 2;
+}
+
+menuitem:hover {
+	bg-color: #2472D4;
+	color: white;
+}
+
+menu {
+	padding: 1 2 1 2;
+	bg-image: url(expand.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+}
+
+menu:hover,menuitem:hover {
+	bg-color: #2472D4;
+	color: white;
+}
+
+menu:hover {
+	bg-image: url(expand_h.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+}
+
+checkbox {
+	padding: 2;
+	bg-image: url(check.png,0,0,31,10);
+	bg-align: right;
+	bg-repeat: 1 1;
+	align: left;
+}
+
+checkbox:hover {
+	bg-color: #2472D4;
+	color: white;
+}
+
+checkbox:selected {
+	bg-image: url(check.png,31,0,31,10);
+}
+
+choiceRadiogroup {
+	margin: 0 0 4 0;
+	border-image: url(item_b.png) 6 6 6 6;
+	border: 6;
+	bg-color: white;
+	gap: 0 2;
+}
+
+radiobutton {
+	layout: borderlayout;
+	padding: 1 2 1 2;
+	align: left;
+}
+
+radiobutton:hover {
+	bg-color: #2472D4;
+	color: white;
+}
+
+radiobutton:selected {
+	bg-image: url(sel.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+}
+
+radiobutton:hover:selected {
+	bg-image: url(sel.png);
+}
+
+choice {
+	bg-image: url(expand.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+}
+
+textfield2 {
+	border: 3;
+	border-image: url(tf.png) 3 3 3 3;
+	bg-color: #dddddd;
+	color: black;
+}
+
+textfield:hover,choice:hover {
+	border: 3;
+	border-image: url(tf.png) 3 3 3 3;
+	bg-color: #dddddd;
+	color: black;
+}
